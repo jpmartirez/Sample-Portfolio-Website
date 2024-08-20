@@ -1,0 +1,8 @@
+@font-face{
+    font-family: New Amsterdam;
+    src:url(./fonts/Amsterdam.ttf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="text-[#E2E2B6] scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./output.css">
+
+</head>
+<body class="px-3 bg-[#021526] md:px-10 sm:px-6 font-Amsterdam ">
+
+    <!-- Navigation section -->
+
+    <nav class="fixed flex items-center justify-between py-2 md:py-4 px-5 md:px-10 bg-[#021526] left-0 right-0 z-50 ">
+        
+        <!-- Toggle for Responsive website -->
+        <input type="checkbox" hidden  id="toggle">
+
+        <div class="flex items-center gap-2">
+            <a href="#about"><img src="../icons/web-logo.svg" alt=""></a>
+            <h1 class="text-xl font-black">Portfolio</h1>
+        </div>
+
+        <ul class="items-center hidden gap-32 lg:flex">
+            <li class="transition-all hover:scale-125"><a href="#about" class="text-lg font-medium hover:underline ">About</a></li>
+            <li class="transition-all hover:scale-125"><a href="#projects" class="text-lg font-medium hover:underline">Projects</a></li>
+            <li class="transition-all hover:scale-125"><a href="#skills" class="text-lg font-medium hover:underline">Skills</a></li>
+            <li class="transition-all hover:scale-125"><a href="#contact" class="text-lg font-medium hover:underline">Contact</a></li>
+        </ul>
+
+        <label for="toggle" class="fixed bottom-0 left-0 w-full h-full screenWhite "></label>
+
+        <div class="flex items-center gap-2 md:gap-5">
+            <button>
+                <a href="" class="flex items-center gap-2 px-2 md:px-4 py-1 md:py-2 text-[#E2E2B6] bg-[#03346E] rounded-lg hover:bg-[#6EACDA] transition-all">
+                    Resume
+                    <img src="../icons/download.svg" alt="">
+                </a>
+            </button>
+            <div class="block lg:hidden">
+                <label for="toggle"><img src="../icons/menu.svg" alt=""></label>
+            </div>
+        </div>
+
+
+        <!-- This is the Navigation that if the screen is in the mobile screem-width, it will appear. It reflects Responsive website-->
+
+        <ul class="rightNav fixed top-0 bottom-0 right-[-100%] bg-[#021526] w-[200px] p-10 flex flex-col items-center justify-around transition-all z-50">
+            <li class="transition-all hover:scale-125"><a href="#about" class="text-lg font-medium hover:underline ">About</a></li>
+            <li class="transition-all hover:scale-125"><a href="#projects" class="text-lg font-medium hover:underline">Projects</a></li>
+            <li class="transition-all hover:scale-125"><a href="#skills" class="text-lg font-medium hover:underline">Skills</a></li>
+            <li class="transition-all hover:scale-125"><a href="#contact" class="text-lg font-medium hover:underline">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- This is the main section or the about section -->
+     
+    <main class="flex justify-center pt-[200px] items-center gap-6 flex-wrap" id="about">
+        <div class="flex flex-col items-center w-[500px] gap-3">
+            <h1 class="text-7xl">Hi, I am</h1>
+            <h2 class="user-name text-4xl text-[#6EACDA] w-fit border-r-2 p-1 border-[#E2E2B6]"></h2>
+            <p class="font-thin text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime suscipit fugiat sequi quam necessitatibus ad et saepe voluptatem id, maiores amet, rem incidunt similique nemo fuga numquam nihil. Laborum, corporis!</p>
+
+            <div class="flex gap-5 mt-2">
+                <a href="" class="transition-all hover:scale-125"><img class="h-7" src="../icons/facebook.svg" alt=""></a>
+                <a href="" class="transition-all hover:scale-125"><img class="h-7" src="../icons/github.svg" alt=""></a>
+                <a href="" class="transition-all hover:scale-125"><img class="h-7" src="../icons/linkedin.svg" alt=""></a>
+                <a href="" class="transition-all hover:scale-125"><img class="h-7" src="../icons/twitter.svg" alt=""></a>
+            </div>
+        </div>
+
+        <div>
+            <img src="../icons/banner.png" alt="">
+        </div>
+    </main>
+
+    <!-- This is the projects section -->
+
+    <div class="mt-[70px] mb-[40px] border-t-2 border-[#E2E2B6] pt-3" id="projects">
+        <h1 class="text-4xl text-center">Projects</h1>
+    </div>
+
+    <div class="grid gap-5 justify-items-center lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1" >
+        <div class="max-w-[450px] border-2 border-[#E2E2B6] rounded-xl">
+            <div class="overflow-hidden border-2 border-[#E2E2B6] rounded-xl">
+                <a href=""><img class="object-cover w-full h-[300px] rounded-xl hover:scale-110 transition-all" src="../projects_pics/project-picture-1.jpg" alt=""></a>
+            </div>
+            
+            <p class="p-1">Date Created : January 24, 2021</p>
+            <p class="p-1">Stacks Used : NextJS, Python, Django</p>
+        </div> 
+
+        <div class="max-w-[450px] border-2 border-[#E2E2B6] rounded-xl">
+            <div class="overflow-hidden border-2 border-[#E2E2B6] rounded-xl">
+                <a href=""><img class="object-cover w-full h-[300px] rounded-xl hover:scale-110 transition-all" src="../projects_pics/project-picture-2.jpg" alt=""></a>
+            </div>
+            
+            <p class="p-1">Date Created : August 18, 2024</p>
+            <p class="p-1">Stacks Used : HTML, TailwindCSS, JavaScript</p>
+        </div> 
+
+        <div class="max-w-[450px] border-2 border-[#E2E2B6] rounded-xl">
+            <div class="overflow-hidden border-2 border-[#E2E2B6] rounded-xl">
+                <a href=""><img class="object-cover w-full h-[300px] rounded-xl hover:scale-110 transition-all" src="../projects_pics/project-picture-3.jpg" alt=""></a>
+            </div>
+            
+            <p class="p-1">Date Created : May 12, 2022</p>
+            <p class="p-1">Stacks Used : ReactJS, TailwindCSS, PHP, TypeScript</p>
+        </div> 
+
+        <div class="max-w-[450px] border-2 border-[#E2E2B6] rounded-xl">
+            <div class="overflow-hidden border-2 border-[#E2E2B6] rounded-xl">
+                <a href=""><img class="object-cover w-full h-[300px] rounded-xl hover:scale-110 transition-all" src="../projects_pics/project-picture-4.jpg" alt=""></a>
+            </div>
+            
+            <p class="p-1">Date Created : December 18, 2022</p> 
+            <p class="p-1">Stacks Used : TailwindCSS, ReactJS, NodeJS, PHP</p>
+        </div> 
+
+        <div class="max-w-[450px] border-2 border-[#E2E2B6] rounded-xl">
+            <div class="overflow-hidden border-2 border-[#E2E2B6] rounded-xl">
+                <a href=""><img class="object-cover w-full h-[300px] rounded-xl hover:scale-110 transition-all" src="../projects_pics/projects-pictures-5.jpg" alt=""></a>
+            </div>
+            
+            <p class="p-1">Date Created : October 19, 2020</p>
+            <p class="p-1">Stacks Used : Python, Tkinter</p>
+        </div> 
+
+        <div class="max-w-[450px] border-2 border-[#E2E2B6] rounded-xl">
+            <div class="overflow-hidden border-2 border-[#E2E2B6] rounded-xl">
+                <a href=""><img class="object-cover w-full h-[300px] rounded-xl hover:scale-110 transition-all" src="../projects_pics/projects-pictures-6.jpg" alt=""></a>
+            </div>
+            
+            <p class="p-1">Date Created : February 07, 2021</p>
+            <p class="p-1">Stacks Used : Java</p>
+        </div> 
+        
+    </div>
+
+    <div class="mt-[70px] mb-[20px] border-t-2 border-[#E2E2B6] pt-3">
+        <h1 class="text-4xl text-center">Skills</h1>
+    </div>
+
+
+    
+    <!-- This is the skills section -->
+    
+    <div class="flex flex-wrap items-center justify-center gap-9" id="skills">
+        <img class="cursor-pointer" src="../icons/icon-javscript.svg" alt="">
+        <img class="cursor-pointer" src="../icons/icon-nodejs.svg" alt="">
+        <img class="cursor-pointer" src="../icons/icon-react.svg" alt="">
+        <img class="cursor-pointer" src="../icons/icon-tailwindcss.svg" alt="">
+        <img class="cursor-pointer" src="../icons/icon-typescript.svg" alt="">
+    </div>
+    
+
+    <!-- This is the footer section -->
+    <footer class="w-full h-[100px] mt-10 bg-[#03346E] flex items-center justify-around flex-wrap" id="contact">
+        <div class="flex items-center gap-3">
+            <a href="#about"><img src="../icons/web-logo.svg" alt=""></a>
+            <p class="text-2xl text-[#E2E2B6]">Portfolio</p>
+        </div>
+
+        <div>
+            <p class="text-sm font-thin text-[#E2E2B6]" >© 2024 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
